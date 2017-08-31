@@ -156,7 +156,7 @@ static column_info_t gpkg_data_column_constraints_columns[] = {
   {"min", "NUMERIC", N, 0, NULL},
   {"min_is_inclusive", "BOOLEAN", N, 0, NULL},
   {"max", "NUMERIC", N, 0, NULL},
-  {"max_is_inclusive, "BOOLEAN", N, 0, NULL},
+  {"max_is_inclusive", "BOOLEAN", N, 0, NULL},
   {"description", "TEXT", N, 0, NULL},
   {NULL, NULL, N, 0, NULL}
 };
