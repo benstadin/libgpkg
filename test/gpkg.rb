@@ -70,7 +70,7 @@ module GeoPackage
       case ENV['GPKG_ENTRY_POINT']
         when /^gpkg_(spl\d+)/
           $1.to_sym
-        when /^gpkg\d+_\d+/
+        when /^gpkg_\d+_\d+/
           :gpkg
         else
           fail("Could not determine test mode for #{entry_point}")

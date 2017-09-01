@@ -29,18 +29,18 @@ GPKG_EXPORT int GPKG_CALL sqlite3_gpkg_auto_init(sqlite3 *db, const char **pzErr
 }
 
 GPKG_EXPORT int GPKG_CALL sqlite3_gpkg_init(sqlite3 *db, const char **pzErrMsg, const sqlite3_api_routines *pThunk) {
-  return sqlite3_gpkg1_2_init(db, pzErrMsg, pThunk);
+  return sqlite3_gpkg_1_2_init(db, pzErrMsg, pThunk);
 }
 
-GPKG_EXPORT int GPKG_CALL sqlite3_gpkg1_0_init(sqlite3 *db, const char **pzErrMsg, const sqlite3_api_routines *pThunk) {
+GPKG_EXPORT int GPKG_CALL sqlite3_gpkg_1_0_init(sqlite3 *db, const char **pzErrMsg, const sqlite3_api_routines *pThunk) {
   return spatialdb_init(db, pzErrMsg, pThunk, spatialdb_geopackage10_schema());
 }
 
-GPKG_EXPORT int GPKG_CALL sqlite3_gpkg1_1_init(sqlite3 *db, const char **pzErrMsg, const sqlite3_api_routines *pThunk) {
+GPKG_EXPORT int GPKG_CALL sqlite3_gpkg_1_1_init(sqlite3 *db, const char **pzErrMsg, const sqlite3_api_routines *pThunk) {
   return spatialdb_init(db, pzErrMsg, pThunk, spatialdb_geopackage11_schema());
 }
 
-GPKG_EXPORT int GPKG_CALL sqlite3_gpkg1_2_init(sqlite3 *db, const char **pzErrMsg, const sqlite3_api_routines *pThunk) {
+GPKG_EXPORT int GPKG_CALL sqlite3_gpkg_1_2_init(sqlite3 *db, const char **pzErrMsg, const sqlite3_api_routines *pThunk) {
   return spatialdb_init(db, pzErrMsg, pThunk, spatialdb_geopackage12_schema());
 }
 

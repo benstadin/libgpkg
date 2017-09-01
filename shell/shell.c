@@ -4350,11 +4350,11 @@ int main(int argc, char **argv){
     }else if( strcmp(z,"-gpkg")==0 ){
       data.gpkgEntryPoint = sqlite3_gpkg_init;
     }else if( strcmp(z,"-gpkg10")==0 ){
-      data.gpkgEntryPoint = sqlite3_gpkg1_0_init;
+      data.gpkgEntryPoint = sqlite3_gpkg_1_0_init;
     }else if( strcmp(z,"-gpkg11")==0 ){
-      data.gpkgEntryPoint = sqlite3_gpkg1_1_init;
+      data.gpkgEntryPoint = sqlite3_gpkg_1_1_init;
     }else if( strcmp(z,"-gpkg12")==0 ){
-      data.gpkgEntryPoint = sqlite3_gpkg1_2_init;
+      data.gpkgEntryPoint = sqlite3_gpkg_1_2_init;
     }else if( strcmp(z,"-spl3")==0 ){
       data.gpkgEntryPoint = sqlite3_gpkg_spl3_init;
     }else if( strcmp(z,"-spl4")==0 ){
